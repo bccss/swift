@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-Ao-DaK">
+                                <rect key="frame" x="86" y="482" width="203" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="jLZ-9r-NW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgD-NW-Hi3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type what you want the label to be here!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-y7-YaU">
+                                <rect key="frame" x="20" y="319" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZg-io-m45">
+                                <rect key="frame" x="0.0" y="145" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="QjG-yE-bNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RRM-y7-YaU" firstAttribute="centerX" secondItem="BbD-Ao-DaK" secondAttribute="centerX" id="2qS-xb-ub1"/>
+                            <constraint firstItem="lZg-io-m45" firstAttribute="centerX" secondItem="RRM-y7-YaU" secondAttribute="centerX" id="3f5-oO-fON"/>
+                            <constraint firstAttribute="trailing" secondItem="lZg-io-m45" secondAttribute="trailing" id="9AR-A9-k8Z"/>
+                            <constraint firstItem="RRM-y7-YaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="AaF-Uk-VyF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BbD-Ao-DaK" secondAttribute="bottom" constant="99" id="Fhe-b2-86F"/>
+                            <constraint firstItem="BbD-Ao-DaK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="Jco-Ol-8mb"/>
+                            <constraint firstItem="lZg-io-m45" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="WxB-YY-IcT"/>
+                            <constraint firstItem="lZg-io-m45" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aA6-8I-3UQ"/>
+                            <constraint firstItem="RRM-y7-YaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sjR-P7-iIu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textBox" destination="RRM-y7-YaU" id="xo7-a2-YAX"/>
+                        <outlet property="topLabel" destination="lZg-io-m45" id="Xsa-Wi-NkZ"/>
+                        <outlet property="updateButton" destination="BbD-Ao-DaK" id="Gcj-4t-mwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="389.5"/>
+        </scene>
+    </scenes>
+</document>
